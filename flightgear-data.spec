@@ -1,7 +1,7 @@
 %define	name	flightgear-data
 %define	oname	FlightGear
 %define	version	1.9.0
-%define release	%mkrel 1
+%define release	%mkrel 2
 %define	Summary	The FlightGear Flight Simulator
 
 Summary:	%{Summary}
