@@ -23,7 +23,7 @@ upon by anyone interested in contributing.
 This package contains the base data files.
 
 %prep
-%setup -q -n data
+%setup -q -n fgdata
 
 %build
 # Nothing
