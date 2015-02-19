@@ -1,8 +1,8 @@
 %define	oname	flightgear
 
 Name:		flightgear-data
-Version:	3.0.0
-Release:	2
+Version:	3.4.0
+Release:	1
 Summary:	The data for FlightGear Flight Simulator
 License:	GPLv2
 Group:		Games/Other
