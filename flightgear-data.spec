@@ -1,13 +1,13 @@
 %define	oname	flightgear
 
 Name:		flightgear-data
-Version:	3.4.0
+Version:	2016.1.1
 Release:	1
 Summary:	The data for FlightGear Flight Simulator
 License:	GPLv2
 Group:		Games/Other
 URL:		http://www.flightgear.org/
-Source0:	ftp://ftp.linux.kiev.ua/pub/mirrors/ftp.flightgear.org/flightgear/Shared/FlightGear-data-%{version}.tar.bz2
+Source0:	ftp://ftp.linux.kiev.ua/pub/mirrors/ftp.flightgear.org/flightgear/Shared/FlightGear-%{version}-data.tar.bz2
 
 BuildArch:	noarch
 
