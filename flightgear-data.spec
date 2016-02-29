@@ -7,8 +7,11 @@ Summary:	The data for FlightGear Flight Simulator
 License:	GPLv2
 Group:		Games/Other
 URL:		http://www.flightgear.org/
-Source0:	ftp://ftp.linux.kiev.ua/pub/mirrors/ftp.flightgear.org/flightgear/Shared/FlightGear-%{version}-data.tar.bz2
-
+# split from original data
+# wget https://sourceforge.net/projects/flightgear/files/release-2016.1/FlightGear-2016.1.1-data.tar.bz2
+# split -n 2 {}
+Source0:	FlightGear-%{version}-data.tar.xz.1
+Source1:	FlightGear-%{version}-data.tar.xz.2
 BuildArch:	noarch
 
 Conflicts:	flightgear < 0.9.10-4
@@ -23,14 +26,14 @@ upon by anyone interested in contributing.
 This package contains the base data files.
 
 %prep
-%setup -q -n fgdata
+# Nothing
 
 %build
 # Nothing
 
 %install
 install -d -m 0755 %{buildroot}%{_datadir}/%{oname}/
-cp -a * %{buildroot}%{_datadir}/%{oname}/
+cat %SOURCE0 %SOURCE1 | tar Jx --strip-components=1 -C %{buildroot}%{_datadir}/%{oname}/
 
 # cleanup temporary files and fix permissions
 find %{buildroot}%{_datadir}/%{oname} -name '*#*' -exec rm {} \;
@@ -52,6 +55,5 @@ do
 done
 
 %files
-%doc AUTHORS COPYING NEWS README Thanks Docs
 %{_datadir}/%{oname}
 
