@@ -26,14 +26,14 @@ upon by anyone interested in contributing.
 This package contains the base data files.
 
 %prep
-# Nothing
+%setup -q -n fgdata
 
 %build
 # Nothing
 
 %install
 install -d -m 0755 %{buildroot}%{_datadir}/%{oname}/
-cat %SOURCE0 %SOURCE1 | tar Jx --strip-components=1 -C %{buildroot}%{_datadir}/%{oname}/
+cp -a * %{buildroot}%{_datadir}/%{oname}/
 
 # cleanup temporary files and fix permissions
 find %{buildroot}%{_datadir}/%{oname} -name '*#*' -exec rm {} \;
@@ -56,4 +56,3 @@ done
 
 %files
 %{_datadir}/%{oname}
-
