@@ -7,7 +7,7 @@ Summary:	The data for FlightGear Flight Simulator
 License:	GPLv2
 Group:		Games/Other
 URL:		http://www.flightgear.org/
-Source0:	https://sourceforge.net/projects/flightgear/files/release-2018.2/%{name}-%{version}.tar.bz2
+Source0:	https://sourceforge.net/projects/flightgear/files/release-2018.2/FlightGear-%{version}-data.tar.bz2
 BuildArch:	noarch
 
 Conflicts:	flightgear < 0.9.10-4
