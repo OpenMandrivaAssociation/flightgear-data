@@ -1,13 +1,13 @@
 %define	oname	flightgear
 
 Name:		flightgear-data
-Version:	2018.2.2
+Version:	2020.3.4
 Release:	1
 Summary:	The data for FlightGear Flight Simulator
 License:	GPLv2
 Group:		Games/Other
 URL:		http://www.flightgear.org/
-Source0:	https://sourceforge.net/projects/flightgear/files/release-2018.2/FlightGear-%{version}-data.tar.bz2
+Source0:	https://sourceforge.net/projects/flightgear/files/release-2020.3/FlightGear-%{version}-data.tar.bz2
 BuildArch:	noarch
 
 Conflicts:	flightgear < 0.9.10-4
