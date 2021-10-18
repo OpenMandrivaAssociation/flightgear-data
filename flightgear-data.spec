@@ -1,7 +1,7 @@
 %define	oname	flightgear
 
 Name:		flightgear-data
-Version:	2020.3.9
+Version:	2020.3.11
 Release:	1
 Summary:	The data for FlightGear Flight Simulator
 License:	GPLv2
