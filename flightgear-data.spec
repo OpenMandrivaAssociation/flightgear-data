@@ -43,12 +43,12 @@ do
 done
 
 # fix files not in utf-8
-for f in Thanks Docs/README.xmlparticles
-do
-	path=%{buildroot}%{_datadir}/%{oname}/$f
-	iconv -f iso-8859-1 -t utf-8 -o ${path}.utf8 $path
-	mv -f ${path}.utf8 ${path}
-done
+#for f in Thanks Docs/README.xmlparticles
+#do
+#	path=%{buildroot}%{_datadir}/%{oname}/$f
+#	iconv -f iso-8859-1 -t utf-8 -o ${path}.utf8 $path
+#	mv -f ${path}.utf8 ${path}
+#done
 
 %files
 %{_datadir}/%{oname}
