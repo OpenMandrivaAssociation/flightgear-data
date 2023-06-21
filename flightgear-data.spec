@@ -1,4 +1,6 @@
 %define	oname	flightgear
+# The usual payload causes timeouts in some builders
+%define _binary_payload w1.zstdio
 
 Name:		flightgear-data
 Version:	2020.3.18
