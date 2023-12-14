@@ -3,7 +3,7 @@
 %define _binary_payload w1.zstdio
 
 Name:		flightgear-data
-Version:	2020.3.18
+Version:	2020.3.19
 Release:	1
 Summary:	The data for FlightGear Flight Simulator
 License:	GPLv2
