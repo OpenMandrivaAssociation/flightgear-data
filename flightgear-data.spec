@@ -8,7 +8,7 @@ Release:	1
 Summary:	The data for FlightGear Flight Simulator
 License:	GPLv2
 Group:		Games/Other
-URL:		http://www.flightgear.org/
+URL:		https://www.flightgear.org/
 Source0:	https://sourceforge.net/projects/flightgear/files/release-2020.3/FlightGear-%{version}-data.txz
 BuildArch:	noarch
 
